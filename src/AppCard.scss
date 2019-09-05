@@ -3,8 +3,20 @@
 }
 
 .card-item {
-  width: 200px;
-  
+  width: 205px;
+}
+
+hr {
+  width: 75%;
+  display: flex;
+  align-self: center;
+  margin: 4px;
+  border-top-width: 2px;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
 }
 
 .card-body {
@@ -34,6 +46,7 @@
 }
 
 .price-text {
-  color: green;
+  color: rgb(25, 169, 86);
+  font-size: 22px;
   font-weight: 600;
 }
