@@ -7,7 +7,7 @@ import AppViewSelector from './AppViewSelector';
 
 function App() {
   const [sorted, setSorted] = useState(false);
-  const [sortBy, setSortBy] = useState("");
+  const [sortBy, setSortBy] = useState('');
   const [sortedData, setSortedData] = useState(cardData);
   const [paginated, setPaginated] = useState(false);
 
@@ -38,7 +38,7 @@ function App() {
   };
 
   return (
-    <Container>
+    <div>
       <AppHeader
         handleSort={handleSort}
         handlePaginationChange={handlePaginationChange}
@@ -46,11 +46,13 @@ function App() {
         sorted={sorted}
         sortBy={sortBy}
       />
-      <AppViewSelector
-        paginated={paginated}
-        sortedData={sortedData}
-      />
-    </Container>
+      <Container>
+        <AppViewSelector
+          paginated={paginated}
+          sortedData={sortedData}
+        />
+      </Container>
+    </div>
   );
 }
 
