@@ -15,7 +15,7 @@ function AppCard(props) {
     heading, subHeading, price, showBridge,
   } = props;
 
-  const renderPrice = (initialPrice) => initialPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  const renderPrice = (initialPrice) => '$'.concat(initialPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','));
   const renderHeading = (initialText) => initialText.toLowerCase().split(' ')
     .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
     .join(' ');
@@ -35,9 +35,9 @@ function AppCard(props) {
           {renderSubheading(subHeading)}
         </Card.Text>
       </Card.Body>
-      <Card.Footer className="d-flex flex-row justify-content-end">
+      <hr className="w-80" />
+      <Card.Footer className="d-flex flex-row justify-content-end py-1 px-2">
         <span className="price-text">
-$
           {renderPrice(price)}
         </span>
       </Card.Footer>
