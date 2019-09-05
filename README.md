@@ -7,7 +7,7 @@
 2) Perform the command `npm install`
 3) Run the app with `npm run start`
 
-You should be up and running on `Port 3000`!
+You should be up and running on `PORT 3000`!
 
 #### Technologies used:
 - React 16.9 via create-react-app
