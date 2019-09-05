@@ -10,10 +10,10 @@
 You should be up and running on `PORT 3000`!
 
 #### Technologies used:
-- React 16.9 via create-react-app
+- React v16.9 via create-react-app
 - ES6 Javascript
-- React-Bootstrap (https://react-bootstrap.github.io/)
+- React-Bootstrap v1.0 (https://react-bootstrap.github.io/)
 - vanilla bootstrap styles to go with React-Bootstrap
-- node-sass
-- prop-types
+- node-sass v4.12
+- prop-types v15.7
 - eslint (airbnb)
