@@ -8,8 +8,8 @@ export default function AppViewSelector(props) {
 
   const DefaultView = (
     // eslint-disable-next-line react/jsx-filename-extension
-    <div className="d-flex flex-wrap justify-content-center">
-      <div className="d-flex flex-row flex-wrap justify-content-center">
+    <div className="d-flex">
+      <div className="d-flex flex-row flex-wrap">
         {sortedData.map((card, index) => (
           <AppCard
             key={index}
@@ -43,7 +43,7 @@ export default function AppViewSelector(props) {
 
   const PaginatedView = (
     <div className="d-flex flex-column">
-      <div className="d-flex flex-row flex-wrap justify-content-center">
+      <div className="d-flex flex-row">
         {sortedData
           .slice((activePage - 1) * pageSize, activePage * pageSize)
           .map((card, index) => (
