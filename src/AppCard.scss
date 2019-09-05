@@ -1,0 +1,38 @@
+.card {
+  border-radius: 15px;
+}
+
+.card-item {
+  width: 200px;
+}
+
+.card-body {
+  height: 175px;
+}
+
+.bridge-bg {
+  background-image: url("http://res.cloudinary.com/bguggie/image/upload/v1425514888/wide_ggbridge_bg_teneax.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.tiles-bg {
+  background-image: url("http://res.cloudinary.com/bguggie/image/upload/v1425514882/darktiles_bg_gike55.jpg");
+  background-repeat: repeat;
+  background-size: 100px;
+}
+
+.card-header {
+  height: 175px;
+  padding: 0px;
+}
+
+.card-header:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.price-text {
+  color: green;
+  font-weight: 600;
+}

@@ -1,1 +1,2 @@
-# UIE-coding-challenge
+# UI Engineer Coding Challenge
+#### By: Adam Brown
