@@ -1,0 +1,10 @@
+.page-item .page-link {
+  background-color: lightcyan;
+  border-color: #343A40;
+  color: #343A40;
+}
+
+.page-item.active .page-link {
+  background-color: #343A40;
+  border-color: #343A40;
+}
