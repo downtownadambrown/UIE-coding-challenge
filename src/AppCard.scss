@@ -82,8 +82,16 @@ hr {
 }
 
 @media screen and (max-width: 991px) {
+  .card-deck {
+    justify-content: center;
+  }
+
+  .default-card-deck {
+    justify-content: center;
+  }
+
   .card-item {
-    width: 140px;
+    //width: 140px;
   }
 
   .card-header {
@@ -91,7 +99,7 @@ hr {
   }
 
   .card-body {
-    height: 100px;
+    //height: 100px;
   }
 
   .card-prop-text {
@@ -140,3 +148,10 @@ hr {
     font-size: .8rem;
   }
 }
+
+@media (min-width: 576px) {
+  .card-deck .card {
+    flex: inherit;
+  }
+}
+

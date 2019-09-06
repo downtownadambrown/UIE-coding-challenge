@@ -42,7 +42,7 @@ export default function AppViewSelector(props) {
   };
 
   const PaginatedView = (
-    <div className="d-flex flex-column">
+    <div className="d-flex flex-column align-items-center">
       <div className="card-deck d-flex">
         {sortedData
           .slice((activePage - 1) * pageSize, activePage * pageSize)
