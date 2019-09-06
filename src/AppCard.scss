@@ -6,6 +6,12 @@
   width: 205px;
 }
 
+.overlay-image {
+  display:block;
+  margin:auto;
+  padding: 1rem;
+}
+
 hr {
   width: 75%;
   display: flex;
@@ -20,7 +26,11 @@ hr {
 }
 
 .card-body {
-  height: 175px;
+  height: 150px;
+}
+
+.card-deck {
+  flex-direction: row;
 }
 
 .bridge-bg {
@@ -32,7 +42,7 @@ hr {
 .tiles-bg {
   background-image: url("http://res.cloudinary.com/bguggie/image/upload/v1425514882/darktiles_bg_gike55.jpg");
   background-repeat: repeat;
-  background-size: 100px;
+  background-size: 85px;
 }
 
 .card-header {
@@ -49,4 +59,86 @@ hr {
   color: rgb(25, 169, 86);
   font-size: 22px;
   font-weight: 600;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1199px) {
+  .card-item {
+    width: 164px;
+  }
+
+  .card-header {
+    height: 145px;
+    padding: 0px;
+  }
+
+  .card-body {
+    height: 125px;
+  }
+
+  .card-prop-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .card-item {
+    width: 140px;
+  }
+
+  .card-header {
+    height: 125px;
+    padding: 0px;
+  }
+
+  .card-body {
+    height: 100px;
+  }
+
+  .card-prop-text {
+    font-size: 0.8rem;
+  }
+
+  .price-text {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-item {
+    width: 200px;
+  }
+
+  .card-deck {
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+
+  .default-card-deck {
+    flex-direction: column;
+  }
+
+  .default-card-deck-wrapper {
+    justify-content: center;
+  }
+
+  .card-header {
+    height: 175px;
+    padding: 0px;
+    overflow: hidden;
+  }
+
+  .card-body {
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .card-prop-text {
+    font-size: 0.8rem;
+  }
+
+  .price-text {
+    font-size: .8rem;
+  }
 }

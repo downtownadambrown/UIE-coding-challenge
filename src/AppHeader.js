@@ -1,5 +1,4 @@
 import React from 'react';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Button from 'react-bootstrap/Button';
 import './AppHeader.scss';
 import PropTypes from 'prop-types';
@@ -19,7 +18,7 @@ export default function AppHeader(props) {
 
   return (
   // eslint-disable-next-line react/jsx-filename-extension
-    <div className="d-flex flex-row justify-content-between align-items-center p-3 ml-1 mr-1">
+    <header className="d-flex flex-row justify-content-between align-items-center p-3 mb-2 shadow bg-dark text-white">
       <form>
         <div className="d-inline-flex align-items-center">
           {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
@@ -30,7 +29,7 @@ export default function AppHeader(props) {
           </label>
         </div>
       </form>
-      <ButtonGroup aria-label="Sort Options" className="button-container d-flex flex-row">
+      <div className="d-flex flex-row justify-content-end">
         <Button
           name="Heading"
           variant={sortBy === 'Heading' && sorted ? 'primary' : 'secondary'}
@@ -55,7 +54,7 @@ export default function AppHeader(props) {
         >
             Sort By Price
         </Button>
-      </ButtonGroup>
-    </div>
+      </div>
+    </header>
   );
 }

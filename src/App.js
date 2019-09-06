@@ -8,7 +8,7 @@ import AppViewSelector from './AppViewSelector';
 function App() {
   const [sorted, setSorted] = useState(false);
   const [sortBy, setSortBy] = useState('');
-  const [sortedData, setSortedData] = useState(cardData);
+  const [sortedData, setSortedData] = useState(cardData.map((card, index) => ({ ...card, Id: index })));
   const [paginated, setPaginated] = useState(false);
 
   const applySort = (sortType) => [].concat(cardData).sort((a, b) => {
@@ -21,7 +21,7 @@ function App() {
     if (sorted) {
       if (e.target.name === sortBy) {
         setSorted(!sorted);
-        setSortedData(cardData);
+        setSortedData(cardData.map((card, index) => ({ ...card, Id: index })));
       } else {
         setSortBy(e.target.name);
         setSortedData(applySort(e.target.name));
@@ -46,12 +46,14 @@ function App() {
         sorted={sorted}
         sortBy={sortBy}
       />
-      <Container>
-        <AppViewSelector
-          paginated={paginated}
-          sortedData={sortedData}
-        />
-      </Container>
+      <main>
+        <Container>
+          <AppViewSelector
+            paginated={paginated}
+            sortedData={sortedData}
+          />
+        </Container>
+      </main>
     </div>
   );
 }
