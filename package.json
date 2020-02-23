@@ -2,7 +2,7 @@
   "name": "autotrader-challenge",
   "version": "0.1.0",
   "private": true,
-  engines: {
+  "engines": {
     "node": "12.8.0"
   },
   "dependencies": {
