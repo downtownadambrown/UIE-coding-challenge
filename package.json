@@ -2,6 +2,9 @@
   "name": "autotrader-challenge",
   "version": "0.1.0",
   "private": true,
+  engines: {
+    "node": "12.8.0"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "node-sass": "^4.12.0",
